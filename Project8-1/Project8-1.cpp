@@ -13,7 +13,14 @@ using namespace std;
 int countVowel(string str);
 
 int main() {
-	
+	string input;
+	while (true) {
+		cout << "Enter a string or Q to quit: ";
+		getline(cin, input);
+		if (input == "Q") break;
+		cout << countVowel(input) << endl;
+	}
+	return 0;
 
 }
 
